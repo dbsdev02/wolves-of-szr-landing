@@ -1,3 +1,18 @@
+@@
+-      { title: "Lovable App" },
+-      { name: "description", content: "Lovable Generated Project" },
+-      { name: "author", content: "Lovable" },
+-      { property: "og:title", content: "Lovable App" },
+-      { property: "og:description", content: "Lovable Generated Project" },
+       { property: "og:type", content: "website" },
+       { name: "twitter:card", content: "summary_large_image" },
+-      { name: "twitter:site", content: "@Lovable" },
++      { name: "author", content: "Wolves International" },
+@@
+       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
++      { rel: "preconnect", href: "https://fonts.googleapis.com" },
++      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
++      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" },
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
