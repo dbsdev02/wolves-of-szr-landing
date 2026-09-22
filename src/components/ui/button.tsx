@@ -1,3 +1,16 @@
+@@
+-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
++  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none text-[10px] font-semibold uppercase cursor-pointer transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+@@
+         ghost: "hover:bg-accent hover:text-accent-foreground",
+         link: "text-primary underline-offset-4 hover:underline",
++        gold: "border border-accent bg-accent text-accent-foreground hover:bg-accent/85",
++        glass: "border border-foreground/30 bg-background/20 text-foreground backdrop-blur-md hover:bg-foreground/10 hover:border-foreground/60",
++        ink: "border border-accent-foreground bg-accent-foreground text-background hover:bg-accent-foreground/85",
++        linkArrow: "text-foreground hover:text-accent",
+@@
+         icon: "h-9 w-9",
++        xl: "h-13 px-6 sm:px-8",
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
