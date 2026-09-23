@@ -142,7 +142,7 @@
 .whatsapp span { display:none; font-size:.58rem; text-transform:uppercase; }
 select option { background:var(--background); color:var(--foreground); }
 @media (min-width:640px){ .whatsapp{padding:.8rem 1rem}.whatsapp span{display:block} }
-@media (min-width:1024px){ @utility site-container { width:min(100% - 6rem,88rem); } }
+@media (min-width:1024px){ .site-container { width:min(100% - 6rem,88rem); } }
 @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto}.hero-media,.hero-enter,.scroll-line{animation:none}.reveal,.reveal-image{opacity:1;transform:none;clip-path:none;transition:none} }
 @keyframes hero-scale { from{transform:scale(1.06)} to{transform:scale(1)} }
 @keyframes hero-enter { from{opacity:0;transform:translateY(2rem)} to{opacity:1;transform:none} }
