@@ -30,7 +30,7 @@ export function Navbar() {
         </Button>
       </div>
       {open && (
-        <nav className="fixed inset-x-0 bottom-0 top-[61px] flex flex-col gap-1 overflow-y-auto border-t border-border/60 bg-background px-5 py-8 lg:hidden" aria-label="Mobile navigation">
+        <nav className="absolute inset-x-0 top-full flex h-[calc(100svh-61px)] flex-col gap-1 overflow-y-auto border-t border-border/60 bg-background px-5 py-8 lg:hidden" aria-label="Mobile navigation">
           {project.nav.map(([label, id]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)} className="py-3 font-display text-2xl uppercase">{label}</a>)}
           <Button asChild variant="gold" size="lg" className="mt-6"><a href="#consultation" onClick={() => setOpen(false)}>Private consultation</a></Button>
         </nav>
