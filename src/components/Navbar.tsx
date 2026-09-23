@@ -30,9 +30,9 @@ export function Navbar() {
         </Button>
       </div>
       {open && (
-        <nav className="site-container flex flex-col gap-1 border-t border-border/60 py-6 lg:hidden" aria-label="Mobile navigation">
+        <nav className="absolute inset-x-0 top-full flex h-[calc(100svh-61px)] flex-col gap-1 overflow-y-auto border-t border-border/60 bg-background px-5 py-8 lg:hidden" aria-label="Mobile navigation">
           {project.nav.map(([label, id]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)} className="py-3 font-display text-2xl uppercase">{label}</a>)}
-          <Button asChild variant="gold" size="lg" className="mt-5"><a href="#consultation" onClick={() => setOpen(false)}>Private consultation</a></Button>
+          <Button asChild variant="gold" size="lg" className="mt-6"><a href="#consultation" onClick={() => setOpen(false)}>Private consultation</a></Button>
         </nav>
       )}
     </header>
